@@ -1,0 +1,88 @@
+A loop is a programming structure that repeats a sequence of instructions 
+until a specific condition is met. Loops allow you to repeat a process 
+over and over without having to write the same (potentially long) 
+instructions each time you want your program to perform a task.
+There are five types of loops in JavaScript.
+
+1- for loop
+2- while loop
+3- do-while loop
+4- for (..in) loop
+5- for (..of) loop
+
+1- JavaScript For loop
+The JavaScript for loop iterates the elements for the fixed number of 
+times. It should be used if number of iteration is known. The syntax of 
+for loop is given below.
+for (initialization; condition; increment)  
+{  
+    code to be executed  
+}  
+
+Example-
+for (i=1; i<=5; i++)  
+{  
+document.write(i + "<br/>")  
+}  
+
+2- JavaScript while loop
+The JavaScript while loop iterates the elements for the infinite number 
+of times. It should be used if number of iteration is not known. The 
+syntax of while loop is given below.
+while (condition)  
+{  
+    code to be executed  
+}  
+
+Example-
+let i=11;  
+while (i<=15)  
+{  
+document.write(i + "<br/>");  
+i++;  
+} 
+
+3- JavaScript do while loop
+The JavaScript do while loop iterates the elements for the infinite number of times like while loop. But, code is executed at least once whether condition is true or false. The syntax of do while loop is given below.
+
+do{  
+    code to be executed  
+}while (condition);  
+
+Example-
+let i=21;  
+do{  
+document.write(i + "<br/>");  
+i++;  
+}while (i<=25);  
+
+4-for (..in) loop: The JavaScript for (..in) statement loops through the 
+enumerable properties of an object. The loop will iterate over all 
+enumerable properties of the object itself and those the object inherits 
+from its constructor’s prototype.
+Syntax
+for (variable in object)
+  statement
+
+Example-
+let userId = ""; 
+let i; 
+for (i in person) { 
+    userId += person[i]; 
+} 
+
+5-for (..of) loop: This for (..of) statement lets you loop over the data 
+structures that are iterable such as Arrays, Strings, Maps, Node Lists, 
+and more. It calls a custom iteration hook with instructions to execute 
+on the value of each property of the object.
+Syntax
+for (variable of iterable) {
+  statement
+}
+
+Example-
+let userId = ""; 
+let i; 
+for (i of text) { 
+    userId += i; 
+}
